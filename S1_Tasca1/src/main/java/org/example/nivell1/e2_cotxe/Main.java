@@ -1,17 +1,17 @@
 package org.example.nivell1.e2_cotxe;
 
-public class Main { 	// Classe principal per demostrar l'ús
+public class Main {
     public static void main(String[] args) {
-        Cotxe.frenar();
-        Cotxe cotxe1 = new Cotxe(250);
-        cotxe1.accelerar();
+        Car.brake();
+        Car car1 = new Car(250);
+        car1.accelerate();
 
-        System.out.println("Marca: " + Cotxe.marca);
-        System.out.println("Model inicial: " + Cotxe.model);
-        System.out.println("Potència: " + cotxe1.potencia);
+        System.out.println("Brand: " + Car.BRAND);
+        System.out.println("Initial model: " + Car.model);
+        System.out.println("Power: " + car1.POWER);
 
-        Cotxe.model = "Yaris";
-        System.out.println("Model modificat: " + Cotxe.model);
+        Car.model = "Yaris";
+        System.out.println("Modified model: " + Car.model);
 
     }
 }

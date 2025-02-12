@@ -1,18 +1,18 @@
 package org.example.nivell2;
 
-class Smartphone extends Telefon implements Camera, Rellotge {
+class Smartphone extends Phone implements Camera, Clock {
 
     public Smartphone(String marca, String model) {
         super(marca, model);
     }
 
     @Override
-    public void fotografiar() {
-        System.out.println("S'està fent una foto");
+    public void takePhoto() {
+        System.out.println("Taking a photo");
     }
 
     @Override
-    public void alarma() {
-        System.out.println("Està sonant l'alarma");
+    public void alarm() {
+        System.out.println("The alarm is ringing");
     }
 }

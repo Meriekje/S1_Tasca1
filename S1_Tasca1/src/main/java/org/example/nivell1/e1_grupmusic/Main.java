@@ -2,12 +2,12 @@ package org.example.nivell1.e1_grupmusic;
 
 public class Main {
     public static void main(String[] args) {
-        Vent flauta = new Vent("Flauta", 300.0);
-        Corda guitarra = new Corda("Guitarra", 200.0);
-        Percussio tambor = new Percussio("Tambor", 400.0);
+        Wind flute = new Wind("Flute", 300.0);  //object 1
+        StringInstrument guitar = new StringInstrument("Guitar", 200.0);  //object 2
+        Percussion drum = new Percussion("Drum", 400.0);  //object 3
 
-        flauta.tocar();
-        guitarra.tocar();
-        tambor.tocar();
+        flute.play();
+        guitar.play();
+        drum.play();
     }
 }

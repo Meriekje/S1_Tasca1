@@ -1,19 +1,19 @@
 package org.example.nivell1.e1_grupmusic;
 
 abstract class Instrument {
-    protected String nom;
-    protected double preu;
+    protected String name;
+    protected double price;
 
     static {
-        System.out.println("S'està inicialitzant un instrument.");
+        System.out.println("An instrument is being initialized");
     }
 
-    public Instrument(String nom, double preu) {
-        this.nom = nom;
-        this.preu = preu;
-        System.out.println("S'ha creat un instrument.");
+    public Instrument(String name, double price) {
+        this.name = name;
+        this.price = price;
+        System.out.println("An instrument has been created.");
     }
 
-    public abstract void tocar();
+    public abstract void play();
 
 }
